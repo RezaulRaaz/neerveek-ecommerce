@@ -79,4 +79,129 @@ header{
     color: #033A6B;
 }
 
-/* menu section */
+/* menu section area */
+.menu-area{
+    border-bottom: 1px solid #FF971A;
+    width: 100%;
+}
+.menu{
+    width: 100%;
+    position: relative;
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu ul li{
+    float: left;
+    margin-right: 2px;
+    position: relative;
+}
+.menu ul li a{
+    padding:15px 20px;
+    display: block;
+    color:#033A6B ;
+    text-decoration: none;
+}
+.menu ul li:hover > a{
+    color: #FF971A;
+}
+/* sub menu style */
+.menu ul li ul.submenu{
+    position: absolute;
+    top: 100%;
+    width: 220px;
+    left: 0;
+    background-color: #FF971A;
+    color: white;
+    transition: 0.5s;
+    opacity: 0;
+    top: 110%;
+    visibility: hidden;
+}
+.menu ul li ul.submenu li{
+    float: none;
+    border-bottom: 1px solid #033A6B;
+    margin: 0;
+}
+.menu ul li ul.submenu li:last-child{
+    border-bottom: none;
+}
+.menu ul li ul.submenu li a{
+    padding: 10px 15px;
+  color: #033A6B;
+}
+.menu ul li ul.submenu li:hover > a{
+    background-color: #033A6B;
+    color: #FF971A;
+}
+.menu ul li:hover ul.submenu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.menu ul li ul.submenu li ul.submenu{
+    left: 100%;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu ul li ul.submenu li:hover > ul.submenu{
+opacity: 1;
+visibility: visible;
+}
+.menu ul li ul.submenu li ul.submenu li{}
+.menu ul li ul.submenu li ul. li a{}
+
+/* mega menu */
+.menu ul li .mega-menu{
+    position: absolute;
+    width: 700px;
+    top: 100%;
+    background-color: #FF971A;
+    padding: 30px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .05s;
+}
+.menu ul li:hover .mega-menu{
+    visibility: visible;
+    opacity: 1;
+}
+.menu ul li .mega-menu ul{
+    width: 33.33%;
+    float: left;
+    padding-right: 5px;
+}
+.menu ul li .mega-menu ul:last-child{
+    border-right: none;
+}
+.menu ul li .mega-menu li{
+    float: none;
+    margin-right: 0;
+}
+.menu ul li .mega-menu li a{
+    padding: 10px 15px;
+}
+.menu ul li .mega-menu li:hover a{
+    color: #FF971A;
+    background-color: #033A6B;
+}
+.mega-menu ul li.Mega-title a{
+    font-weight: 700;
+    border-bottom: 1px solid #033A6B;
+    
+
+}
+/* mega full menu */
+.menu ul li.static{
+    position: static;
+}
+ .menu ul li .mega-full{
+    width: 100%;
+ }
+ .menu ul li .mega-full ul{
+    width: 25%;
+ }
