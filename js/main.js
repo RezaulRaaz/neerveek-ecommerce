@@ -6,7 +6,6 @@
         margin:0,
         items:1,
         autoplay:true,
-        autoplayTimeout:3000,
         autoplayHoverPause:true,
         navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
         nav:false,
