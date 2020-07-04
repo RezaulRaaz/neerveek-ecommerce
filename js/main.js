@@ -26,6 +26,15 @@
             }
         }
     })
+
+    $(window).on('scroll', function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 10) {
+            $(".search-mobile").removeClass("sticky");
+        } else {
+            $(".search-mobile").addClass("sticky");
+        }
+    });
     
 
     
