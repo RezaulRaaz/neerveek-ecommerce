@@ -19,7 +19,7 @@
                 items:1
             },
             767:{
-                items:3
+                items:1
             },
             992:{
                 items:1
