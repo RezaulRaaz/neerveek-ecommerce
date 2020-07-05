@@ -19,13 +19,22 @@
                 items:1
             },
             767:{
-                items:3
+                items:1
             },
             992:{
                 items:1
             }
         }
     })
+
+    $(window).on('scroll', function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 10) {
+            $(".search-mobile").removeClass("sticky");
+        } else {
+            $(".search-mobile").addClass("sticky");
+        }
+    });
     
 
     

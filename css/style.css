@@ -23,7 +23,21 @@ a {
     color: #033A6B;
     background-color: #FF971A;
 }
-
+.top-mobile-menu{
+    display: none;
+}
+.mobile-bottom-section{
+    display: none;
+}
+.sticky{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+}
 header {
     padding: 20px 0px;
     border-bottom: 1px solid #FF971A;
@@ -454,27 +468,27 @@ box-shadow: 0px -0.54px 13px -4px rgba(0,0,0,0.75);
     left: 0;
     display: flex;
     justify-self: start;
-    transition: 0.7s;
+    visibility: hidden;
 }
 .quick-view-product{
     background-color: #FFB901;
     border-radius: 3px;
     margin-right: 10px;
-    text-align: center;
-    padding: 4px 15px;
     color: #000;
-    display: none;
-    transition: 0.7s;
     font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
     
 }
 .quick-view-product:hover{
     background-color: #033A6B;
     color: azure;
 }
-.product:hover .quick-view-product{
-    display: block;
-    transition: 0.7s;
+.product:hover .procduct-action{
+    visibility: visible;
 }
 .product-name {
     font-weight: 600;
