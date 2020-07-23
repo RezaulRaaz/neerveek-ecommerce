@@ -7,7 +7,23 @@
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .product-grid-container {
+        grid-template-columns: auto auto auto;
+    }
+    .featured-categories {
+        overflow: hidden;
+    }
+    .fcategories {
+        width: 300px;
+        height: 300px;
+    }
+    .categorie-border {
+        width: 250px;
+        height: 250px;
+    }
+    .slider {
+        height: 350px;
+    }
 
 }
 
@@ -82,7 +98,7 @@
             align-items: center;
         }
         .material-icons {
-            font-size: 45px;
+            font-size: 25px;
         }
         footer {
             display: none;
@@ -114,7 +130,7 @@
             color: white;
         }
         .quick-view-product {
-            border-radius: 50%;
+            border-radius: 10%;
             color: #000;
         }
         .procduct-action {
