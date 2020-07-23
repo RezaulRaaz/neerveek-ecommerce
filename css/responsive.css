@@ -203,7 +203,7 @@
         align-items: center;
     }
     .material-icons{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     /* top bar */
@@ -274,7 +274,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;
+        border-radius: 10%;
         color: #000;
     }
    
