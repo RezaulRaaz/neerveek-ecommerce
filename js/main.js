@@ -29,15 +29,13 @@
 
     $(window).on('scroll', function () {
         var scroll = $(window).scrollTop();
-        if (scroll < 5) {
-            $(".search-mobile").removeClass("sticky");
+        if (scroll < 200) {
+            $(".menu-search-area").removeClass("sticky");
+            $(".footer").removeClass("footer-minus");
         } else {
-            $(".search-mobile").addClass("sticky");
+            $(".menu-search-area").addClass("sticky");
+            $(".footer").addClass("footer-minus");
         }
     });
     
-
-    
-
-    
-    })(jQuery);
+})(jQuery);
