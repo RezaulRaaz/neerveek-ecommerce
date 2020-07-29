@@ -37,5 +37,15 @@
             $(".footer").addClass("footer-minus");
         }
     });
+
+
+    // Humburger menu
+        const menuIcon= document.querySelector('#humberger-Menu');
+        const navbar=document.querySelector('.lara-navbar');
+
+        menuIcon.addEventListener('click',()=>{
+            navbar.classList.toggle('change');
+        });
+
     
 })(jQuery);
