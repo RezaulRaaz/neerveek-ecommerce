@@ -1,0 +1,93 @@
+#humberger-Menu{
+    z-index: 999;
+    text-align: center;
+}
+
+.lara-navbar{
+	justify-content: center;
+	z-index: 99;
+	display: flex;
+	top: 0;
+	left: -300px;
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	background-color: #4e4d4d;
+	transition: left 0.8s cubic-bezier(1,0,0,1);
+}
+.change{
+    left:0;
+}
+.lara-right-sibar-menu{
+	width: 100%;
+	overflow-y: scroll;
+}
+.lara-small-user-avatar-area{
+	width: 100%;
+	background-color: #ffce00;
+	height: 120px;
+	display: block;
+}
+.lara-right-sibar-menu ul{
+	background-color: rgb(44, 44, 44);
+	height: 100%;
+	width: 100%;
+	list-style: none;
+}
+
+.lara-right-sibar-menu ul li{
+	line-height: 50px;
+	border-bottom: 1px solid rgb(71, 71, 71);
+}
+.lara-right-sibar-menu ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	padding-left:35px;
+	font-weight: 500;
+	display: block;
+	width: 100%;
+	position: relative;
+	border-left: 3px solid transparent;
+	transition: 0.6s;
+}
+.lara-right-sibar-menu ul li:hover a {
+	color: cyan;
+	background-color: #1e1e1e;
+	border-left-color:cyan ;
+}
+.lara-right-sibar-menu ul ul{
+	position: static;
+	display: none;
+} 
+.lara-right-sibar-menu ul ul > li{
+	border-bottom: none;
+	transition: 0.6s;
+	
+}
+.lara-right-sibar-menu ul ul li a{
+	color: #e6e6e6;
+	font-size: 15px;
+	padding-left: 70px;
+}
+.lara-right-sibar-menu ul li:hover ul {
+	color: #e6e6e6;
+	background-color: #1b1b1b;
+	border-left-color:transparent ;
+	display: block;
+}
+.lara-right-sibar-menu ul ul li a:hover{
+	color: rgb(84, 146, 117)!important;
+	background-color: #1e1e1e!important;
+}
+.lara-right-sibar-menu ul li a span{
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	font-size: 18px;
+	transition: transform 0.4s;
+}
+.lara-right-sibar-menu ul li:hover a span{
+	transform: translateY(-50%) rotate(-180deg);
+}
