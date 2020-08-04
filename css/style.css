@@ -507,7 +507,7 @@ box-shadow: 0px -0.54px 13px -4px rgba(0,0,0,0.75);
     text-align: center;
 }
 .currency{
-    font-weight: 500;
+    font-weight: 800;
 }
 .regular{
     color: red;
@@ -520,4 +520,109 @@ footer{
     height: 500px;
     background-color: #000;
     margin-top: 100px;
+}
+
+
+/* shopping cart */
+.shoping_cart{
+    width: 400px;
+    height: 100vh;
+    background-color: #dedce9;
+    position: fixed;
+    right: -400px;
+    top:0;
+    z-index: 999;
+    transition: right 0.8s cubic-bezier(0,0,0,1);
+}
+.shop-change{
+    right: 0;
+}
+.close-cart{
+    cursor: pointer;
+}
+
+.top-bar-shoping-cart{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    padding:5px 20px;
+}
+.product-in-cart{
+    padding: 25px 20px;
+    height: 100%;
+    overflow-y: scroll;
+}
+.cart-product{
+    display: grid;
+    grid-template-columns: 100px auto;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.product-img{
+    width: 100%;
+}
+.product-img img{
+    border-radius: 5px;
+    width: 100%;
+}
+.cart-product-content p{
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.cart-product-size span{
+   cursor: pointer;
+}
+.cart-product-quantity span{
+    cursor: pointer;
+}
+.cart-product-quantity input{
+    width: 30px;
+    border: none;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 13px;
+}
+.cart-product-quantity input:focus{
+    border: none;
+    background-color: #ffffff;
+}
+.addTocart-product-btn{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content:space-evenly;
+    gap: 15px;
+    padding: 15px 0;
+}
+.cart-product-total-price{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.btn-To-cart{
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #505050;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+.shop-cart-click{
+    cursor: pointer;
+}
+.shoping-bag{
+    position: relative;
+}
+.cart-notification {
+    position: absolute;
+    top: -3px;
+    right: -1px;
+    z-index: 9;
+    font-size: 10px;
+    padding: 0px 4px;
+    background-color: #FF971A;
+    border-radius: 50%;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
 }

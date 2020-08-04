@@ -138,6 +138,12 @@
             display: flex;
             justify-content: flex-end;
         }
+        .mobile-bottom-section {
+            z-index: 1000;
+        }
+        .cart-product-total-price {
+            margin-bottom: 100px;
+        }
     
      
 
@@ -304,6 +310,16 @@
     }
     footer{
         display: none;
+    }
+
+    .shoping_cart{
+        width: 100%;
+    }
+    .mobile-bottom-section {
+        z-index: 1000;
+    }
+    .cart-product-total-price {
+        margin-bottom: 100px;
     }
     
 
