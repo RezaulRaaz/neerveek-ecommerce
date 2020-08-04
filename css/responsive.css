@@ -144,7 +144,9 @@
         .cart-product-total-price {
             margin-bottom: 100px;
         }
-    
+        .cart-product:last-child{
+            margin-bottom: 250px;
+        }
      
 
 
@@ -319,7 +321,10 @@
         z-index: 1000;
     }
     .cart-product-total-price {
-        margin-bottom: 100px;
+        margin-bottom: 15%;
+    }
+    .cart-product:last-child{
+        margin-bottom: 250px;
     }
     
 

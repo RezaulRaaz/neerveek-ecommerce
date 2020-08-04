@@ -551,6 +551,7 @@ footer{
     padding: 25px 20px;
     height: 100%;
     overflow-y: scroll;
+
 }
 .cart-product{
     display: grid;
@@ -558,6 +559,9 @@ footer{
     justify-content: space-between;
     gap: 15px;
     margin-bottom: 20px;
+}
+.cart-product:last-child{
+    margin-bottom: 250px;
 }
 .product-img{
     width: 100%;
@@ -595,9 +599,15 @@ footer{
     gap: 15px;
     padding: 15px 0;
 }
-.cart-product-total-price{
-    margin-top: 25px;
-    margin-bottom: 25px;
+.cart-product-total-price {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FF971A;
+    text-align: center;
+    padding: 10px 0;
+
 }
 .btn-To-cart{
     padding: 5px 10px;
