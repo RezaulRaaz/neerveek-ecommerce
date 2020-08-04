@@ -47,5 +47,24 @@
             navbar.classList.toggle('change');
         });
 
-    
+    // Shoping cart
+    const ShopingIcon= document.querySelector('.shoping-bag');
+    const shopingCart=document.querySelector('.shoping_cart');
+    ShopingIcon.addEventListener('click',()=>{
+        shopingCart.classList.toggle('shop-change');
+    });
+
+    // Shoping cart
+    const ShopIcon= document.querySelector('.bottom-shop-click');
+    const shopCart=document.querySelector('.shoping_cart');
+    ShopIcon.addEventListener('click',()=>{
+        shopCart.classList.toggle('shop-change');
+    });
+
+    const closeIcon= document.querySelector('.close-cart');
+    const closeCart=document.querySelector('.shoping_cart');
+    closeIcon.addEventListener('click',()=>{
+        closeCart.classList.toggle('shop-change');
+    });
+
 })(jQuery);
